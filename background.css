@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(-45deg, #000046, #1cb5e0, #000046);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    color: white;
+    text-align: center;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* Profile Image - Positioned to the Top Left */
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* Centered Header Title */
+.header-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Sections (Increased transparency to 90%) */
+.section, .education-section, .resume-container, .portfolio-box {
+    width: 60%;
+    margin: 20px auto;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.90); /* Increased Transparency */
+    border-radius: 10px;
+    color: black; /* Ensuring text inside is black */
+}
+
+/* Portfolio Section - Adjusted for better spacing */
+.portfolio-section {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Reduced gap */
+    margin-top: 10px; /* Reduced margin */
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+/* Portfolio Box - Adjusted width and margin */
+.portfolio-box {
+    width: 30%; /* Slightly wider */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.90);
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .portfolio-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-box {
+        width: 80%;
+        margin-bottom: 10px; /* Reduced space between boxes */
+    }
+}
+
+/* Resume Section */
+.resume-container {
+    width: 50%;
+    margin: 20px auto;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.90); /* Increased Transparency */
+    border-radius: 10px;
+    color: black; /* Ensuring text inside is black */
+}
+
+/* Round Buttons with Animation */
+.round-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 50px; /* Makes the button round */
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+/* Hover Effect: Transitions from white to black */
+.round-button:hover {
+    background: black;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Hover Effects */
+.hover-box:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .portfolio-section {
+        flex-direction: column;
+    }
+
+    .portfolio-box {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* Adjust profile pic for smaller screens */
+    .profile-pic {
+        width: 60px;
+        height: 60px;
+        top: 5px;
+        left: 5px;
+    }
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333333; /* Dark Gray */
+    color: white; /* White text */
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
